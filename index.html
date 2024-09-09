@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projeto Final - Lógica de Programação</title>
+	</head>
+
+	<body>
+		<h1>ToDo List</h1>
+		<hr />
+		<h2>Adicionar nova tarefa:</h2>
+		<label
+			>Título da tarefa:
+			<input type="text" id="inputNovaTarefa1" size="30" />
+		</label>
+		<br />
+		<br />
+		<label
+			>Texto da tarefa:
+			<input type="text" id="inputNovaTarefa2" size="50" />
+		</label>
+		<br />
+		<br />
+		<button onclick="cadastrarNovaTarefa()">Adicionar</button>
+		<br />
+		<br />
+		<hr />
+		<h2>Tarefas:</h2>
+		<ul style="list-style-type: none" id="raizDaLista"></ul>
+		<hr />
+		<br />
+		<label
+			>Exibir apenas a tarefa de Id:
+			<input type="text" size="6" id="inputExibirTarefa" />
+		</label>
+		<button onclick="exibirTarefa()">Exibir</button>
+		<br /><br />
+		<div id="botoesDeEdicao"></div>
+
+		<script src="tarefas.js"></script>
+	</body>
+</html>
